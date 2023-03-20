@@ -1,49 +1,52 @@
 # Assignment: ASSIGNMENT 1
-# Name: Lastname, Firstname
-# Date: 2010-02-14
+# Name: Michaels, Joanna
+# Date: 2023-03-20
 
 ## Create a numeric vector with the values of 3, 2, 1 using the `c()` function
 ## Assign the value to a variable named `num_vector`
 ## Print the vector
-num_vector <- ___
+num_vector <- c(3, 2, 1)
+num_vector
 
 ## Create a character vector with the values of "three", "two", "one" "using the `c()` function
 ## Assign the value to a variable named `char_vector`
 ## Print the vector
-char_vector <- ___
+char_vector <- c('three', 'two', 'one')
+char_vector
 
 ## Create a vector called `week1_sleep` representing how many hours slept each night of the week
 ## Use the values 6.1, 8.8, 7.7, 6.4, 6.2, 6.9, 6.6
-week1_sleep <- ___
+week1_sleep <- c(6.1, 8.8, 7.7, 6.4, 6.2, 6.9, 6.6)
 
 ## Display the amount of sleep on Tuesday of week 1 by selecting the variable index
-week1_sleep[__]
+## Assuming the week starts on a Sunday
+week1_sleep[3]
 
 ## Create a vector called `week1_sleep_weekdays`
 ## Assign the weekday values using indice slicing
-week1_sleep_weekdays <- week1_sleep[__:__]
+week1_sleep_weekdays <- week1_sleep[1:7]
 
 ## Add the total hours slept in week one using the `sum` function
 ## Assign the value to variable `total_sleep_week1`
-total_sleep_week1 <- ___
+total_sleep_week1 <- sum(week1_sleep)
 
 ## Create a vector called `week2_sleep` representing how many hours slept each night of the week
 ## Use the values 7.1, 7.4, 7.9, 6.5, 8.1, 8.2, 8.9
-week2_sleep <- ___
+week2_sleep <- c(7.1, 7.4, 7.9, 6.5, 8.1, 8.2, 8.9)
 
 ## Add the total hours slept in week two using the sum function
 ## Assign the value to variable `total_sleep_week2`
-total_sleep_week2 <- ___
+total_sleep_week2 <- sum(week2_sleep)
 
 ## Determine if the total sleep in week 1 is less than week 2 by using the < operator
-__ < __
+total_sleep_week1 < total_sleep_week2
 
 ## Calculate the mean hours slept in week 1 using the `mean()` function
-mean(__)
+mean(week1_sleep)
 
 ## Create a vector called `days` containing the days of the week.
 ## Start with Sunday and end with Saturday
-days <- ___
+days <- c('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
 
 ## Assign the names of each day to `week1_sleep` and `week2_sleep` using the `names` function and `days` vector
 names(week1_sleep) <- ___
