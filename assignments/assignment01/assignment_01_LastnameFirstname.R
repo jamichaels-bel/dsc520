@@ -46,20 +46,20 @@ mean(week1_sleep)
 
 ## Create a vector called `days` containing the days of the week.
 ## Start with Sunday and end with Saturday
-days <- c('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
+days <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"')
 
 ## Assign the names of each day to `week1_sleep` and `week2_sleep` using the `names` function and `days` vector
-names(week1_sleep) <- ___
-names(week2_sleep) <- ___
+names(week1_sleep) <- days
+names(week2_sleep) <- days
 
 ## Display the amount of sleep on Tuesday of week 1 by selecting the variable name
-week1_sleep[__]
+week1_sleep["Tuesday"]
 
 ## Create vector called weekdays from the days vector
-weekdays <- days[__:__]
+weekdays <- days["Monday":"Friday"]
 
 ## Create vector called weekends containing Sunday and Saturday
-weekends <- ___
+weekends <- c("Sunday", "Saturday")
 
 ## Calculate the mean about sleep on weekdays for each week
 ## Assign the values to weekdays1_mean and weekdays2_mean
@@ -68,7 +68,7 @@ weekdays2_mean <- mean(week2_sleep[weekdays])
 
 ## Using the weekdays1_mean and weekdays2_mean variables,
 ## see if weekdays1_mean is greater than weekdays2_mean using the `>` operator
-__ > __
+weekdays1_mean > weekdays2_mean
 
 ## Determine how many days in week 1 had over 8 hours of sleep using the `>` operator
 ___
