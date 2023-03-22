@@ -86,15 +86,15 @@ student04 <- c(95.2, 94.1)
 grades <- rbind(grades, student04)
 
 ## Add a new assignment column with `cbind()`
-assignment04 <- c(92.1, 84.3, 75.1, 97.8)
-grades <- cbind(grades, assignment04)
+assignment03 <- c(92.1, 84.3, 75.1, 97.8)
+grades <- cbind(grades, assignment03)
 
 ## Add the following names to columns and rows using `rownames()` and `colnames()`
 assignments <- c("Assignment 1", "Assignment 2", "Assignment 3")
 students <- c("Florinda Baird", "Jinny Foss", "Lou Purvis", "Nola Maloney")
 
-rownames(grades) <- c("Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4")
-colnames(grades) <- c("Florinda Baird", "Jinny Foss", "Lou Purvis", "Nola Maloney")
+rownames(grades) <- students
+colnames(grades) <- assignments
 
 ## Total points for each assignment using `colSums()`
 colSums(grades)
