@@ -2,6 +2,7 @@
 # Name: Michaels, Joanna
 # Date: 2023-03-20
 
+
 ## Create a numeric vector with the values of 3, 2, 1 using the `c()` function
 ## Assign the value to a variable named `num_vector`
 ## Print the vector
