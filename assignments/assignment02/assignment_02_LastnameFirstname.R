@@ -12,7 +12,6 @@ dir()
 ## working directory to project root folder (the folder should contain the `data` directory
 ## Use `setwd()` if needed
 
-
 ## Load the file `data/tidynomicon/person.csv` to `person_df1` using `read.csv`
 ## Examine the structure of `person_df1` using `str()`
 person_df1 <- read.csv("data/tidynomicon/person.csv")
